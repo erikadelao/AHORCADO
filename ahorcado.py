@@ -3,7 +3,7 @@ import random
 
 def elegirPalabra(): #Waterman's "Reservoir Algorithm"
     afile = open("palabras.txt") #Abrir la lista de palabras
-    line = next(afile) #Next???
+    #line = next(afile) #Next???, innecesario.
     for num, aline in enumerate(afile): #Enumerate??
       if random.randrange(num + 2): continue #???
       line = aline.strip("\n") #Remover códigos de escape
