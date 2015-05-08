@@ -9,7 +9,8 @@ def elegirLinea():
       line = line.strip("\n")
     file.close()
     return line
-    
+
+#Implementar esta función con strings
 def removerAcentos(lista):
         for palabra2 in linea. split ():
             palabra3=[]
