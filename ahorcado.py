@@ -1,4 +1,3 @@
-#Okol & Developingo
 import mono
 import random
 
