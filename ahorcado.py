@@ -1,18 +1,6 @@
 #Okol & Developingo
 import mono
 import random
-'''
-lista_palabras = {
-    'cpu': 'Unidad central de procesamiento',
-    'sqli':'Es un error que te permite ejecutar consultas a la base de datos',
-    'php':'lenguaje de programacion para crear webs dinamicas',
-    'ruby on rails':'framework web de ruby',
-    'perl':'papa de PHP',
-    'django':'framework web de python',
-    'print':'funcion para imprimir en pantalla en casi cualquier lenguaje de scripting'
-    
-}
-'''
 
 def elegirLinea():
     afile = open("palabras.txt")
