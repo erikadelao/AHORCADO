@@ -6,7 +6,7 @@ def elegirPalabra(): #Waterman's "Reservoir Algorithm"
     line = next(file)
     for num, aline in enumerate(file):
       if random.randrange(num + 2): continue
-      line = line.strip("\n")
+      line = line.strip("\n\r")
     file.close()
     return line
 
