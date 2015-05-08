@@ -1,7 +1,7 @@
 import mono
 import random
 
-def elegirLinea():
+def elegirLinea(): #Waterman's "Reservoir Algorithm"
     file = open("palabras.txt")
     line = next(file)
     for num, aline in enumerate(file):
