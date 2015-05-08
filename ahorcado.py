@@ -2,11 +2,11 @@ import mono
 import random
 
 def elegirPalabra(): #Waterman's "Reservoir Algorithm"
-    file = open("palabras.txt")
-    line = next(file)
-    for num, aline in enumerate(file):
-        if random.randrange(num + 2): continue
-        line = line.strip("\n\r")
+    afile = open("palabras.txt")
+    line = next(afile)
+    for num, aline in enumerate(afile):
+      if random.randrange(num + 2): continue
+      line = aline.strip("\n")
     return line
 
 #Implementar esta función con strings
