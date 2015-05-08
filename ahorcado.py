@@ -1,7 +1,7 @@
 import mono
 import random
 
-def elegirLinea(): #Waterman's "Reservoir Algorithm"
+def elegirPalabra(): #Waterman's "Reservoir Algorithm"
     file = open("palabras.txt")
     line = next(file)
     for num, aline in enumerate(file):
@@ -17,7 +17,7 @@ def removerAcentos(lista):
             for palabra2 in linea.split():
                 palabra3.append(palabra2.strip("áéióúñ"))
             return " ".join(palabra3)
-            
+
 print ("""Vamos a jugar
 ahorcado!!
 Listo?
@@ -26,7 +26,8 @@ Listo?
 input('Enter para comenzar!')
 
 
-palabra = elegirLinea()
+#palabra = elegirLinea()
+palabra = removerAcentos(elegirPalabra)
 intentos_lista = ['_']*len(palabra)
 intentos_malos = 0
 primer_juego = True
