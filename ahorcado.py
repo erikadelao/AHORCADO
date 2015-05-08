@@ -6,7 +6,7 @@ def elegirPalabra(): #Waterman's "Reservoir Algorithm"
     line = next(afile) #Next???
     for num, aline in enumerate(afile): #Enumerate??
       if random.randrange(num + 2): continue #???
-      line = aline.strip("\n") #Remover códigos de espace
+      line = aline.strip("\n") #Remover códigos de escape
     return line #Regresar la línea obtenida aleatoriamente
 
 #Implementar esta función con strings
