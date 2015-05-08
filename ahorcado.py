@@ -9,7 +9,14 @@ def elegirLinea():
       line = line.strip("\n")
     file.close()
     return line
-
+    
+def removerAcentos(lista):
+        for palabra2 in linea. split ():
+            palabra3=[]
+            for palabra2 in linea.split():
+                palabra3.append(palabra2.strip("áéióúñ"))
+            return " ".join(palabra3)
+            
 print ("""Vamos a jugar
 ahorcado!!
 Listo?
