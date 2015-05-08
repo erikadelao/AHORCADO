@@ -5,8 +5,8 @@ def elegirPalabra(): #Waterman's "Reservoir Algorithm"
     file = open("palabras.txt")
     line = next(file)
     for num, aline in enumerate(file):
-      if random.randrange(num + 2): continue
-      line = line.strip("\n\r")
+        if random.randrange(num + 2): continue
+        line = line.strip("\n\r")
     return line
 
 #Implementar esta función con strings
