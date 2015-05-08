@@ -8,6 +8,7 @@ def elegirLinea():
     for num, aline in enumerate(file):
       if random.randrange(num + 2): continue
       line = line.strip("\n")
+    file.close()
     return line
 
 print ("""Vamos a jugar
