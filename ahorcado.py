@@ -26,7 +26,7 @@ input('Enter para comenzar!')
 
 
 #palabra = elegirLinea()
-palabra = removerAcentos(elegirPalabra)
+palabra = elegirPalabra
 intentos_lista = ['_']*len(palabra)
 intentos_malos = 0
 primer_juego = True
