@@ -3,11 +3,11 @@ import mono
 import random
 
 def elegirLinea():
-    afile = open("palabras.txt")
-    line = next(afile)
-    for num, aline in enumerate(afile):
+    file = open("palabras.txt")
+    line = next(file)
+    for num, aline in enumerate(file):
       if random.randrange(num + 2): continue
-      line = aline.strip("\n")
+      line = line.strip("\n")
     return line
 
 print ("""Vamos a jugar
