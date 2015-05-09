@@ -10,8 +10,8 @@ def elegirPalabra(): #Waterman's "Reservoir Algorithm"
     return line #Regresar la línea obtenida aleatoriamente
 
 #Implementar esta función con strings
-def removerAcentos(lista):
-        for palabra2 in linea. split ():
+def removerAcentos(linea):
+        for palabra2 in linea.split():
             palabra3=[]
             for palabra2 in linea.split():
                 palabra3.append(palabra2.strip("áéióúñ"))
@@ -26,7 +26,7 @@ input('Enter para comenzar!')
 
 
 #palabra = elegirLinea()
-palabra = elegirPalabra()
+palabra = removerAcentos(elegirPalabra())
 intentos_lista = ['_']*len(palabra)
 intentos_malos = 0
 primer_juego = True
